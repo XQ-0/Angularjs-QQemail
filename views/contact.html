@@ -1,0 +1,86 @@
+<link rel="stylesheet" type="text/css" href="../css/index.css">
+<div class="TXcontainer fix">
+    <div class="left">
+        <div class="top fix">
+            <div class="but">
+                <div class="c add">
+                    <a href="#"></a>
+                </div>
+                <div class="c phone">
+                    <a href="#"></a>
+                </div>
+                <div class="c tools">
+                    工具
+                    <a href="#"></a>
+                </div>
+            </div>
+            <div class="search">
+            	<input type="text" placeholder="搜索全部联系人">
+            	<a href="#">
+            		<span></span>
+            	</a>
+            </div>
+        </div>
+        <h3>全部</h3>
+        <div class="conCon">
+        	<table ng-controller='contactCtr'>
+                <tr>
+                    <td>
+                        <input type="checkbox"></input>
+                    </td>
+                   	<td><a href="#">姓名</a> </td>
+                    <td><a href="#">邮箱</a> </td>
+                    <td><a href="#">电话</a> </td>
+                    <td><a href="#">分组</a> </td>
+                </tr>
+                <tr ng-repeat='b in contactCon'>
+                	<td>
+                        <input type="checkbox"></input>
+                    </td>
+                    <td>{{b.name}}</td>
+                    <td>{{b.email}}</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="TXright">
+        <div class="title fix">
+        	<h3>通讯录</h3>
+			<a href="#">新建组</a>
+        </div>
+        <a href="#" class="all">全部（97）</a>
+        <h4>其他联系人</h4>
+        <ul>
+            <li>
+                <a href="#">历史联系人（31）</a>
+            </li>
+        </ul>
+        <h5>QQ好友</h5>
+        <ul>
+            <li>
+                <a href="#">の)-（185）</a>
+            </li>
+            <li>
+                <a href="#">我恢复的好友（84）</a>
+            </li>
+            <li>
+                <a href="#">heart（34）</a>
+            </li>
+            <li>
+                <a href="#">603（8）</a>
+            </li>
+            <li>
+                <a href="#">html5（5）</a>
+            </li>
+            <li>
+                <a href="#">高中同学（25）</a>
+            </li>
+            <li>
+                <a href="#">考研（5）</a>
+            </li>
+            <li>
+                <a href="#">大学同学（25）</a>
+            </li>
+        </ul>
+    </div>
+</div>

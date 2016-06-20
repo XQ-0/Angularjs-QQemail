@@ -1,0 +1,49 @@
+<link rel="stylesheet" type="text/css" href="../css/index.css">
+<div class="SLcontent">
+    <div class="top">
+        <div class="title">
+            <b>收件箱</b> (共 350 封，其中 <a href="#">未读邮件</a> 141 封)
+        </div>
+        <div class="buttonList fix">
+            <div class="left">
+                <a href="#">删除</a>
+                <a href="#">彻底删除</a>
+                <a href="#">转发</a>
+                <a href="#">举报</a>
+                <a href="#">全部标记为已读</a>
+                <a href="#">标记为...</a>
+                <a href="#">移动到...</a>
+            </div>
+            <div class="right">
+                <a href="#">下一页</a>
+                <a href="#">跳转</a>
+            </div>
+        </div>
+        <div class="SLcon">
+            <table ng-controller='emailCtr'>
+                <tr>
+                    <td>
+                        <input type="checkbox"></input>
+                    </td>
+                    <td>
+                        <span class="icon"></span>
+                    </td>
+                    <td><a href="#">发件人</a> </td>
+                    <td><a href="#">主题</a> </td>
+                    <td><a href="#">时间</a> </td>
+                </tr>
+                <tr ng-repeat='a in emailCon'>
+                	<td>
+                        <input type="checkbox"></input>
+                    </td>
+                     <td>
+                        <span class="icon"></span>
+                    </td>
+                    <td>{{a.name}}</td>
+                    <td>{{a.title}}</td>
+                    <td>{{a.time}}</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
